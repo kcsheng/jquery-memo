@@ -5,4 +5,4 @@ $("header ul").prepend("<li style='color: red'>first item</li>");
 
 // simialr to .append and .prepend, you also have .before and .after that add before or after an element.
 
-//.html and .text will fill or replace whatever exists in the container.
+//.html and .text will fill or replace whatever exists in the container
