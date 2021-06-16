@@ -1,6 +1,9 @@
-// removeAttr() - remove an attribute
-// attr() - read or set an attribute value
+console.log($("#lead-banner").css("position"));
 
-$("#contact img").removeAttr("src"); // remove the imgae source
-
-$("#points-of-sale img").attr("src", "images/cs-2.png"); // Change attr's value
+$("#lead-banner").css("top", "100px").css("border", "3px solid red");
+// better way if you have multiple css attribute to change/add
+$("header nav li").css({
+  border: "1px solid blue",
+  fontSize: "30px",
+  opacity: "0.2",
+});
