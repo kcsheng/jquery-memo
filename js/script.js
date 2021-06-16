@@ -1,22 +1,20 @@
-// jquery filters - very much like css pseudoclasses - refining selectors, always starts with colon
+// jquery really excels in traversing dom. the syntax is much simpler and light weight than vanilla javascript
+// next element
+$("img[alt=map").next().css({ border: "5px solid red" });
+$("#clients img").next().css({ border: "3px solid blue" });
 
-// :even and :odd are based on index, as jquery wraps elements in array.
-$("header nav li:even").css({ border: "2px solid blue" });
-$("header nav li:odd").css({ border: "2px solid yellow" });
+// previous element
+$("header nav").prev().css({ border: "3px solid yellow" });
 
-$("#contact ul:first").css({ backgroundColor: "yellow" });
-$("#contact ul:last").css({ border: "1px solid red" });
-// using :not
-$("section:not('#lead-banner')").css({ border: "1px solid cyan" });
+// parent, you can also use parents()
 
-//:lt, :gt less than or greater than, be mindful of using index
-$("#contact-methods li:lt(2)").css({ border: "1px solid blue" });
-$("#contact-methods li:gt(1)").css({ border: "1px solid red" });
+$("#points-of-sale h3").parent().css({ border: "3px solid pink" });
 
-// Attribute filters: a tag with specific attribute
-$("div[id]").css({ backgroundColor: "pink" });
-$("img[src]").css({ border: "5px solid gray" });
-$("a[href]").css({ textDecoration: "underline" });
+// children
+$("#contact-methods").children().css({ backgroundColor: "cyan" });
 
-// Attribute with specific value: a tag with specific attribute=value pairs
-$("section[id=clients]").css({ backgroundColor: "red" });
+// find
+$("#social-nav").find(".linked-in").css({ border: "1px solid black" });
+
+// closest parent - only looks up, not down
+$("header ul").closest("nav").css({ border: "1px solid gray" });
