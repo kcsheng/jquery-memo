@@ -1,12 +1,8 @@
-// Method chaining speeds up code productivity
-$("#lead-banner p").css({ color: "red" }).next;
-$("#contact-methods")
-  .append("<p>")
-  .text("Just a new line of contact")
-  .css({ color: "red", fontSize: "30px" })
-  .next()
-  .css({ border: "3px solid blue" })
-  .closest("section")
-  .css({ border: "5px solid purple" })
-  .prev()
-  .css({ border: "5px solid green" });
+// append: add at the bottom of all other existing element in the parent
+
+$("header ul").append("<li style='color: yellow'>last item</li>");
+$("header ul").prepend("<li style='color: red'>first item</li>");
+
+// simialr to .append and .prepend, you also have .before and .after that add before or after an element.
+
+//.html and .text will fill or replace whatever exists in the container.
