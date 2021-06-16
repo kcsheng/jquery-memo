@@ -1,8 +1,6 @@
-// jquery makes remove content simple
+// removeAttr() - remove an attribute
+// attr() - read or set an attribute value
 
-// empty - empties the inner html content, but leave the tag
+$("#contact img").removeAttr("src"); // remove the imgae source
 
-$("#points-of-sale h3").empty();
-
-// Delete the tag and inner content
-$("#contact-methods").remove();
+$("#points-of-sale img").attr("src", "images/cs-2.png"); // Change attr's value
