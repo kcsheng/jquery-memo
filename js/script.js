@@ -1,8 +1,8 @@
-// append: add at the bottom of all other existing element in the parent
+// Wrap or unwrap an element or elements, so you can manipulate them, e.g., visibility, clickability, responsiveness... etc
 
-$("header ul").append("<li style='color: yellow'>last item</li>");
-$("header ul").prepend("<li style='color: red'>first item</li>");
-
-// simialr to .append and .prepend, you also have .before and .after that add before or after an element.
-
-//.html and .text will fill or replace whatever exists in the container
+// wrap() wraps individully
+// unwrap() unwraps individually
+// wrapAll() wraps everythng in one single element
+$("section").wrap("<div>"); // wraps all sections with individual divs
+$("section").unwrap(); // reverse wrapping
+$("section").wrapAll("<div>"); //wraps all sections into one div
