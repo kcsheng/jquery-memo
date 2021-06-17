@@ -1,10 +1,7 @@
-// jquery simplifies syntax of event binding/unbinding through using helpers
+// if js document is placed at the head section, the whole js document needs to be wrapped in function of document.on("ready") or document.ready
 
-// helpers are less better performers
+// By doing this, when all elements have been loaded. The jquery files will kick in.
 
-// $(".wrapper li").hover(() => {
-//   this.css({ border: "1px solid red" });
-// });
-$("#lead-banner").hover(() => {
-  alert("You hovered on me!");
-});
+// The further shorthand from above is just wrapping all content in $(function(){ js content })
+
+// The other similar command is window.load() or window.on("load"). This will wait for the entire page to load, including images.
