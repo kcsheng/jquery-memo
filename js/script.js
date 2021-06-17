@@ -1,16 +1,10 @@
-// jquery makes binding events easy across all different types of browsers
+// jquery simplifies syntax of event binding/unbinding through using helpers
 
-// on: binds an event
-// off: unbinds an event
-let lis = $("#points-of-sale li");
+// helpers are less better performers
 
-lis.on("mouseover", turnred);
-
-function turnred() {
-  $(this).css({ backgroundColor: "cyan" });
-}
-lis.on("mouseout", turnwhite);
-
-function turnwhite(e) {
-  $(this).css({ backgroundColor: "white" });
-}
+// $(".wrapper li").hover(() => {
+//   this.css({ border: "1px solid red" });
+// });
+$("#lead-banner").hover(() => {
+  alert("You hovered on me!");
+});
