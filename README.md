@@ -1,1 +1,1 @@
-# Tutorial series from NetNinja
+# Tutorial series
